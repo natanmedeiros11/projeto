@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Expotec 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #8a4d8a2a;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            font-size: 40px;
+            color: #333;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #9132912a;
+        }
+        table, th, td {
+            border: 1px solid #f0e6e6;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        h2 {
+            font-size: 25px;
+            color: #333;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #cf4141;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <img src="fundo.jpg" alt="Expotec 2023" style="width: 200px; height: auto;">
+    <h1>Programação da Expotec 2023</h1>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Evento</th>
+            <th>Local</th>
+            <th>Hora</th>
+        </tr>
+        <tr>
+            <td>20 de Novembro</td>
+            <td>Abertura e Credenciamento</td>
+            <td>Auditório</td>
+            <td>08:00 - 09:30</td>
+            
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Apresentação Musical</td>
+            <td>Espaço Cultural</td>
+            <td>09:30 - 10:30</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Salas Temáticas</td>
+            <td>2° Piso Prédio Central</td>
+            <td>09:30 - 12:00</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Oficina de Desenho</td>
+            <td>3° Piso Prédio Central</td>
+            <td>10:30 - 12:00</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Salas Temáticas</td>
+            <td>2° Piso Prédio Central</td>
+            <td>14:00 - 18:00</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Apresentação Musical</td>
+            <td>Espaço Cultural</td>
+            <td>15:30 - 16:30</td>
+        </tr>
+        <tr>
+            <td>21 de Novembro</td>
+            <td>Salas Temáticas</td>
+            <td>2° Piso Prédio Central</td>
+            <td>08:00 - 12:00</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Apresentação</td>
+            <td>Auditório</td>
+            <td>08:45 -  11:15</td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Exposição de Trabalhos</td>
+            <td>Piso Térreo Prédio Central	</td>
+            <td>09:30 - 12:00
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Oficina de Desenho	</td>
+            <td>3º Piso Prédio Central	</td>
+            <td>10:30 - 12:00
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Artesanato Utilizando Materiais Minerais	</td>
+            <td>2º Piso Prédio Anexo	</td>
+            <td>10:30 - 12:00
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Palestra: Energia Solar e Sustentabilidade</td>
+            <td>Auditório</td>
+            <td>14:00 - 14:45
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Salas Temáticas	</td>
+            <td>2º Piso Prédio Central	</td>
+            <td>14:00 - 18:00
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Palestra: Potencial da Região Seridó para empreendimentos em Energias Renováveis	</td>
+            <td>Auditório	</td>
+            <td>14:45 - 15:30
+            </td>
+        </tr>
+        <tr>
+            <td>----------</td>
+            <td>Apresentação Musica/Teatro/Dança	</td>
+            <td>Auditório</td>
+            <td>15:30 - 18:00
+            </td>
+      
+    </table>
+    <h2>Preencha o Formulário</h2>
+    <form action="processar_formulario method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
